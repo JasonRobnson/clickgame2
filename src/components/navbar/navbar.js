@@ -4,48 +4,52 @@ import { Link } from 'react-router-dom'
 
 
 const Navbar = props => (
-    <nav className="navbar">
-      <Link className="navbar-brand" to="/">ClickGame</Link>
-        <div>
-             <ul className="navbar">
-                  <li className={
-                  window.location.pathname === "/" || 
-                  window.location.pathname === "/about"
-                  ? "nav-item active"
-                  : "nav-item"
-                 }>
+    <nav className="navbar teal lighten-2 ">
+     <ul>
+    <li>
+    <Link className="navbar-brand" to="/">
+      The Click Game
+    </Link>
+        </li>
+     
+        <li
+          className={
+            window.location.pathname === "/" ||
+            window.location.pathname === "/about"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/" className="nav-link">
+            About
+          </Link>
 
-                    <Link to="/root" className="nav-link"
-                    >About
-                    </Link>
-                    
-                </li>
-                 <li className={
-                      window.location.pathname === "/rules" 
-                      ? "nav-item active"
-                      : "nav-item"
-                 }>
+        </li>
+        <li
+          className={
+            window.location.pathname === "/discover"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/discover" className="nav-link">
+            Discover
+          </Link>
+        </li>
+        <li
+          className={
+            window.location.pathname === "/search"
+              ? "nav-item active"
+              : "nav-item"
+          }
+        >
+          <Link to="/search" className="nav-link">
+            Search
+          </Link>
+        </li>
+      </ul>
 
-                    <Link to="/root" className="nav-link">
-                    Rules
-                    </Link>
-                 
-                 </li>
-                 <li className={
-                      window.location.pathname === "/learn" 
-                      ? "nav-item active"
-                      : "nav-item"
-                 }>
-
-                    <Link to="/root" className="nav-link">
-                    Learn
-                    </Link>
-                 
-                 
-                  </li>
-             </ul>
-        </div>
-    </nav>
+  </nav>
 )
 
 export default Navbar
