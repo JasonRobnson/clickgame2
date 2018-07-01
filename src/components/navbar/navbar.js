@@ -1,55 +1,28 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-// import './Navbar.css'
+
 
 
 const Navbar = props => (
-    <nav className="navbar teal lighten-2 ">
-     <ul>
-    <li>
-    <Link className="navbar-brand" to="/">
-      The Click Game
-    </Link>
-        </li>
-     
-        <li
-          className={
-            window.location.pathname === "/" ||
-            window.location.pathname === "/about"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/" className="nav-link">
-            About
-          </Link>
-
-        </li>
-        <li
-          className={
-            window.location.pathname === "/discover"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/discover" className="nav-link">
-            Discover
-          </Link>
-        </li>
-        <li
-          className={
-            window.location.pathname === "/search"
-              ? "nav-item active"
-              : "nav-item"
-          }
-        >
-          <Link to="/search" className="nav-link">
-            Search
-          </Link>
-        </li>
-      </ul>
-
-  </nav>
+  <div>
+    <div className="header teal lighten-2">
+      <div className="row">
+        <div className="col m4 brand-logo">
+            <a href="/" className="brand-logo"><h1>Logo</h1></a>
+        </div>
+        <div className="col m6">
+            <ul>
+                <li>
+             
+                  <h3>The Click Game</h3> 
+              
+                </li>
+            </ul>
+        </div>
+      </div>
+           
+    </div>
+  </div>
+   
 )
 
 export default Navbar
