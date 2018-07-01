@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Cards.css" 
+
 
 const Cards = props => (
 
@@ -6,20 +8,19 @@ const Cards = props => (
     <div>
      <div className="container">
             <div className="row">
-                <div className="col m3">
-                    <div className="card">
-                        <div className="card-image">
-                            <img src="http://www.arnold.fun/400/250" alt="test image"/>
+                <div className="col m7">
+                    <div className="card"> 
+                        <div className="card-image image-container">
+                            <img src={props.image} alt={props.name}/>
                         </div>
-                        <div className="card-content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsam veritatis possimus, adipisci minus quo sapiente vel necessitatibus animi nulla in accusantium laboriosam. Debitis ut, culpa ad ducimus enim perferendis.</p>
-                        </div>
-                        <div className="card-action">
-                                <a href="http://www.google.com"></a>
-                        </div>
+                       
+                        <h3>{props.name}</h3>
                     </div>
+                        
                 </div>
+                
             </div>
+            <span onClick={() => props.removeFriend(props.id)} className="remove"> 𝘅 </span>
     </div>
 
     </div>

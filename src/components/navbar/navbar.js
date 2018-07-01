@@ -9,14 +9,8 @@ const Navbar = props => (
         <div className="col m4 brand-logo">
             <a href="/" className="brand-logo"><h1>Logo</h1></a>
         </div>
-        <div className="col m6">
-            <ul>
-                <li>
-             
-                  <h3>The Click Game</h3> 
-              
-                </li>
-            </ul>
+        <div className="col m8">
+            <h3>Click Game</h3>
         </div>
       </div>
            
