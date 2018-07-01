@@ -5,16 +5,7 @@ const Container = props => (
     <div className="row">
       <div className="col m12">
           <h2>Row 1</h2>
-      </div>
-    </div>
-    <div className="row">
-      <div className="col m12">
-          <h3>Row 2</h3>
-      </div>
-    </div>
-    <div className="row">
-      <div className="col m12">
-        <h3>Row 3 </h3>
+      
       </div>
     </div>
   </div>
