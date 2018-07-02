@@ -1,0 +1,6 @@
+.ScoreBox {
+    width: 20em;
+    max-width: 20em; /* or whatever width you want. */
+    height: 10em;
+    display: inline-block;
+}

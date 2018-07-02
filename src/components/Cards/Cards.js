@@ -18,9 +18,8 @@ const Cards = props => (
                     </div>
                         
                 </div>
-                
+                <span onClick={() => props.setClicked(props.id)}>X</span>
             </div>
-            <span onClick={() => props.removeFriend(props.id)} className="remove"> 𝘅 </span>
     </div>
 
     </div>
