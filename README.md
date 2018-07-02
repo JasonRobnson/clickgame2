@@ -5,14 +5,15 @@ Below you will find some of the tools and techonologies used for this Project.
 ## Table of Contents
 
 - [Folder Structure](#folder-structure)
-- [Available Scripts](#available-scripts)
+
   - 
 ## Problem Solved
   Attempting to create a game that will track state and render random cards to the page.
 
 ## Technology Used
-  Node.js 
-  React.js
+ - Node.js 
+ - React.js
+ -  Materialize
 
 ## Folder Structure
 
