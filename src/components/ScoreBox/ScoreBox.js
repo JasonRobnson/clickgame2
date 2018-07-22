@@ -2,7 +2,7 @@
 import React from 'react';
 import "./ScoreBox.css" 
 
-const ScoreBox  = props => (
+const ScoreBox = props => (
   <div className="ScoreBox">
           <h4>
              Your score: {props.correctCounter}
